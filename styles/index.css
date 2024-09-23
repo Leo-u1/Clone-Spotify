@@ -2,10 +2,12 @@ body{
     display: grid;
     background: black;
     display: grid;
-    grid-template-columns: 350px auto ;
+    grid-template-columns: 420px 1fr 0px;
+    grid-template-rows:48px 1fr 76px;
    /* El primer elemento ocupa 250px y el segundo el resto */
-    grid-gap: 16px; /* Elimina el espacio entre columnas */
+    gap: 8px; /* Elimina el espacio entre columnas */
     margin: 0;
+    padding: 8px;
     height: 100vh;
     
 }
@@ -13,12 +15,11 @@ body{
 
 header{
     width: 100vw;
-    height: 50px;
-    background: gray;
-    border-radius: 10px;
+    height: 48px;
+    
     grid-column-start: 1;
     grid-column-end: -1;
-
+    
    
 }
 .header{
@@ -29,11 +30,13 @@ header{
     width: 50px;
     height: 50px;
     justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: -3;
 }
 aside{
-    width: 350px;
-    display: flex;
-    background: gray;
+   
+    font-size: 18px;
+    background: #121212;
     border-radius: 10px;
 
 }
@@ -41,40 +44,95 @@ aside{
  margin-top: 4px;
     display: flex;
     height: 50px;
+    justify-content: space-between;
 }
 .biblioteca{
     margin: 0px 4px 0 4px;
     border-radius: 36px;
       
 }
+svg{
+    height: 38px ;
+    margin: 0px 10px 0px 10px;
+}
+.svg-plus{
+    height: 25px;
+   
+}
 .aside-biblioteca a{ 
     height: 50px;
     display:flex;
     align-items: center;
     align-content: center;
-    width: 150px;
+    
     text-decoration: NONE;
-    margin-right: 140px;
+
    
-    height: 50px;
    
-    color: black;
+    color: #bfbfbf;
+    .plus{
+        display: flex;
+        flex-direction: column;
+     
+        align-items: flex-start;
+        margin-left: 100px;
+    }
 }
+
 .img{
  border-radius: 36px;   
  align-items: center;
  align-content: center;    
-margin: 0px 4px 0 4px;
+margin: 0px 4px 0 85px;
 width: 50px;
 height: 50px;
         }
+.playlist
 
+{  margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0px 8px 8px;
+    color: #b3b3b3;
+}
+.cardp{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    margin: 8px 0px;
+    padding: 16px 20px;
+    color: #fff;
+    background: #1f1f1f;
+    border-radius: 8px;
+    h4{
+        margin-top: 4px;
+        margin-bottom: 8px;
+    }
+    p{
+        font-size: 14px;
+        margin-top: 0;
+    }
+    a{
+        align-items: center;
+        background-color: #ffff;
+        border-radius: 50px;
+        text-decoration: none; 
+        color: #000;       
+        font-size: 14px;
+        font-weight: 700;
+        padding: 4px 16px;
+        text-align: center;
+    }
+}
 
 main{
     grid-column-start: 2;
     grid-column-end: -1;
     position: relative;
-    background: gray;
+    background: #121212;
     border-radius: 10px;
 
 }
@@ -82,7 +140,7 @@ section{
     height: 100px;
     background: gray;
     border-radius: 10px;
-    grid-column-start: -3;
+    grid-column-start: -4;
     grid-column-end: -1;
 }
 
