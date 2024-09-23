@@ -1,0 +1,90 @@
+body{
+    display: grid;
+    background: black;
+    display: grid;
+    grid-template-columns: 350px auto ;
+   /* El primer elemento ocupa 250px y el segundo el resto */
+    grid-gap: 16px; /* Elimina el espacio entre columnas */
+    margin: 0;
+    height: 100vh;
+    
+}
+
+
+header{
+    width: 100vw;
+    height: 50px;
+    background: gray;
+    border-radius: 10px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+
+   
+}
+.header{
+    display:flex;
+    flex-direction: row;
+}
+ img{
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+}
+aside{
+    width: 350px;
+    display: flex;
+    background: gray;
+    border-radius: 10px;
+
+}
+.aside-biblioteca{
+ margin-top: 4px;
+    display: flex;
+    height: 50px;
+}
+.biblioteca{
+    margin: 0px 4px 0 4px;
+    border-radius: 36px;
+      
+}
+.aside-biblioteca a{ 
+    height: 50px;
+    display:flex;
+    align-items: center;
+    align-content: center;
+    width: 150px;
+    text-decoration: NONE;
+    margin-right: 140px;
+   
+    height: 50px;
+   
+    color: black;
+}
+.img{
+ border-radius: 36px;   
+ align-items: center;
+ align-content: center;    
+margin: 0px 4px 0 4px;
+width: 50px;
+height: 50px;
+        }
+
+
+main{
+    grid-column-start: 2;
+    grid-column-end: -1;
+    position: relative;
+    background: gray;
+    border-radius: 10px;
+
+}
+section{
+    height: 100px;
+    background: gray;
+    border-radius: 10px;
+    grid-column-start: -3;
+    grid-column-end: -1;
+}
+
+
+
